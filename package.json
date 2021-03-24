@@ -4,17 +4,29 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
+    "serve": "nuxt & cd server && node index",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "server": "cd server && node index"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",
     "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.3"
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nuxt": "^2.15.3",
+    "swiper": "^6.5.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "fibers": "^5.0.0",
+    "miragejs": "^0.1.41",
+    "sass": "^1.32.8",
+    "sass-loader": "10"
+  }
 }
